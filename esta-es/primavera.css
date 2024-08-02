@@ -1,0 +1,62 @@
+/* Reset de estilos para remover margens e paddings padrão */
+body, h1, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 0 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #c7ca03ea;
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul li {
+    display: inline;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+ul li:before {
+    content: "\2022";
+    margin-right: 5px;
+}
+
+.img-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.img-container img {
+    margin: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    .img-container img {
+        width: 100%;
+        display: block;
+    }
+}

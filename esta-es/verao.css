@@ -1,0 +1,63 @@
+/* Reset de estilos para remover margens e paddings padrão */
+body, h1, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 20px auto; /* Centraliza o conteúdo */
+    max-width: 800px; /* Define largura máxima para o conteúdo */
+    padding: 0 20px; /* Adiciona um espaçamento interno */
+    color: #333; /* Cor do texto */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700; /* Negrito */
+    color: #cc2900; /* Cor do título */
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul li {
+    display: inline;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+ul li:before {
+    content: "\2022";  /* Adiciona um bullet antes de cada item da lista */
+    margin-right: 5px;
+}
+
+.img-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.img-container img {
+    margin: 10px;
+    border: 2px solid #000; /* Borda preta */
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    .img-container img {
+        width: 100%; /* Ajusta a largura das imagens para ocupar 100% do container */
+        display: block; /* Exibe as imagens como blocos */
+    }
+}
